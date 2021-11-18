@@ -1,0 +1,214 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+/* grnaral styling */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.hide-on-mobile{
+    display: none !important;
+}
+
+@media (min-width: 992px) {
+    .hide-on-mobile{
+        display: unset !important;
+    }
+    .hide-on-desktop{
+        display: none !important;
+    }
+}
+.py-5{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.pb-5{
+    padding-bottom: 0.75rem;
+}
+
+.section-tittle{
+    font-size: 2.5rem;
+    text-align:center;
+}
+
+
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CSS for Header Section */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #0e2a47;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+
+.logo{
+    margin-right:auto;
+}
+
+.logo img{
+    width: 40px;
+}
+
+.nav-list{
+    list-style: none;
+
+}
+
+.nav-list li{
+    display: inline;
+    padding: 0 2rem;
+}
+.nav-list li a{
+    text-decoration: none;
+    color:#fff;
+}
+
+.nav-list li a:hover{
+    color:#4ab395;
+}
+
+
+
+.action-button{
+    text-decoration: none;
+    color:#fff;
+    background-color: #4ab395;
+    padding: 0.5rem 1rem 0.5rem;
+    border-radius: 2.5rem;
+}
+
+.hamburger{
+      margin-left: 1.5rem;
+      z-index: 4;
+}
+
+.hamburger div{
+     width: 35px;
+     height: 5px;
+     margin: 6px 0;
+     background-color: #4ab395;
+
+}
+.mobile-nav{
+    width: 100%;
+    height: 100vh;
+    background-color: #0e2a47;
+    display: flex;
+    flex-direction: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    z-index: 3;
+    transition: 1s;
+}
+.mobile-nav li{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 2rem 0;
+    }
+
+.mobile-nav a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 2rem;
+    
+}
+
+.mobile-nav-change{
+    top: 0;
+
+}
+
+.hamburger-change .bar1{
+        transform: rotate(-45deg) translate(-9px, 6px);
+}
+.hamburger-change .bar2{
+         opacity: 0;
+}
+.hamburger-change .bar3{
+         transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* CSS for the hero section */
+
+.hero{
+    color:rgb(243, 222, 223);
+}
+
+.hero-bg{
+    background-image: url('jtimage\ -\ Copy.jpg');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align:center;
+    background-color: rgba(14, 42, 71, 0.5);
+}
+.hero-text h1{
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+/* CSS for the about section */
+
+.about-img img{
+    width: 100%;
+    height: 400px;
+}
+
+@media (min-width: 992px) {
+    .lg-flex{
+        display: flex;
+    }
+    .about-text{
+         width: 50%;
+         padding-left: 1.25rem;
+         margin-top: auto;
+         margin-bottom: auto;
+    }
+
+    .about-img{
+          width: 50%;
+          margin-top: auto;
+          margin-bottom: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
